@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="100dp"
+                    >
+                    <ImageView
+                        android:id="@+id/pic"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_profile"
+                        android:background="@color/whiteY"
+                        android:contentDescription="@string/logo"
+                        />
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/nm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nm"
+                        android:maxLines="1"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:textColor="@color/dark"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="@string/des"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:textColor="@color/dark"
+                        android:textSize="16sp"
+                        android:drawablePadding="5dp"
+                        android:layout_marginVertical="2dp"
+                        app:drawableStartCompat="@drawable/ic_work"
+                        app:drawableTint="@color/dark" />
+                    <TextView
+                        android:id="@+id/pn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="@string/pn"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:textColor="@color/dark"
+                        android:textSize="16sp"
+                        android:drawablePadding="5dp"
+                        android:layout_marginBottom="7dp"
+                        app:drawableStartCompat="@drawable/ic_phone"
+                        app:drawableTint="@color/dark" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="50dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="22dp"
+                android:backgroundTint="@color/greenY"
+                >
+                <TextView
+                    android:id="@+id/reqType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/admin"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/whiteX"
+                    android:paddingHorizontal="12sp"
+                    android:paddingVertical="2dp"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="end"
+        android:translationZ="2dp"
+        >
+        <ImageButton
+            android:id="@+id/accept"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/ic_done"
+            app:tint="@color/white"
+            android:background="@drawable/btn_grn_bg"
+            android:contentDescription="@string/accept"
+            />
+        <ImageButton
+            android:id="@+id/reject"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_close"
+            app:tint="@color/white"
+            android:background="@drawable/btn_red_bg"
+            android:contentDescription="@string/reject"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="location">
+        <item>Green Garden</item>
+        <item>Food Court</item>
+        <item>Campus Front</item>
+        <item>Campus Side</item>
+        <item>AB4</item>
+    </string-array>
+
+    <string-array name="work">
+        <item>Teacher</item>
+        <item>Student</item>
+        <item>Employee</item>
+    </string-array>
+
+    <string-array name="time" >
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>20 min</item>
+        <item>30 min</item>
+    </string-array>
+    <string-array name="availability" >
+        <item>Available</item>
+        <item>Unavailable</item>
+    </string-array>
+    <string-array name="paymentType" >
+        <item>Send Money</item>
+        <item>Cash Out</item>
+        <item>Payment</item>
+    </string-array>
+</resources>
